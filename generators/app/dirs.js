@@ -6,6 +6,7 @@ module.exports = [
     'src/fonts',
     'src/styles',
     'src/scripts',
+    'src/tests',
     'src/scripts/app',
     'src/scripts/app/behaviors',
     'src/scripts/app/collections',
@@ -15,12 +16,12 @@ module.exports = [
     'src/scripts/app/apis',
     'src/scripts/app/views',
     'src/scripts/app/templates',
-    'tasks',
-    'tests',
-    'tests/collections',
-    'tests/models',
-    'tests/controllers',
-    'tests/routers',
-    'tests/apis',
-    'tests/views'
+    'src/tests/specs',
+    'src/tests/specs/collections',
+    'src/tests/specs/models',
+    'src/tests/specs/controllers',
+    'src/tests/specs/routers',
+    'src/tests/specs/apis',
+    'src/tests/specs/views',
+    'tasks'
 ];
