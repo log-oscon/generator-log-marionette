@@ -1,0 +1,36 @@
+{
+  "name": "generator-log-js",
+  "version": "0.1.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "log-oscon/generator-log-js",
+  "author": {
+    "name": "log OSCON",
+    "email": "",
+    "url": "https://bitbucket.org/log-oscon/generator-log-js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.18.5",
+    "lodash": "~3.5.0",
+    "chalk": "~1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}
