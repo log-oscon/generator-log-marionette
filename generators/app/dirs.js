@@ -24,5 +24,7 @@ module.exports = [
     'src/tests/specs/routers',
     'src/tests/specs/apis',
     'src/tests/specs/views',
-    'tasks'
+    'gulp',
+    'gulp/tasks',
+    'gulp/util'
 ];
