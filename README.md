@@ -2,11 +2,11 @@
 
 ## Installation
 
-`npm install -g generator-log-js` - this is not reachable...yet :)
+`npm install -g generator-log-fe` - not npm available...yet :)
 
 ## Bootstrap
 
-`yo log-js` will generate a `package.json` with the specified dependencies , an `.editorconfig`, a `.gitignore`, a `.jshintrc` and will create the following directories and files: e criar as seguintes directorias e ficheiros:
+`yo log-fe` will generate a `package.json` with the specified dependencies , an `.editorconfig`, a `.gitignore`, a `.jshintrc` and will create the following directories and files: e criar as seguintes directorias e ficheiros:
 
 * tasks/
 * src/:
@@ -14,35 +14,25 @@
   * fonts/;
   * styles/;
   * scripts/:
-
       * `main.js` - application bootstrap
       * app/:
-
           * `app.js` - basic definition of `Backbone.Marionette.Application`;
           * `radio.js` - basic definition of `Radio` with a predefined `global` channel;
           * behaviors/ :
-
               * `behaviors.js` - placeholder for other `Behavior`
-
           * collections/ ; 
           * models/ ;
           * controllers/ ;
           * routers/ ;
           * apis/ ;
           * views/ :
-
               * `root-view.js` - view used by `app.js` as a view placeholder
-
           * templates/ :
-
                * `root.(hbs|dust)` - `root-view.js` template
-
           * regions/',
 
   * tests/:
-
       * app/:
-
           * collections/;
           * models/;
           * controllers/;
@@ -57,7 +47,7 @@ All `package.json` will be automatically installed
 You can see a list of possible generators by typing: `yo --help`. In this case you will receive the following list - alongside other generators:
 
 ```
-log-js
+log-fe
     behavior
     collection
     collectionview
@@ -74,11 +64,11 @@ log-js
 
 Bear in mind, composite-template **IS NOT** supposed to be used. It is only used internally by `compositeview`.
 
-You can see each sub-generator and its options by typing: `yo log-js:[generator] --help`. E.g.: by typing `yo log-js:compositeview --help` it will return:
+You can see each sub-generator and its options by typing: `yo log-fe:[generator] --help`. E.g.: by typing `yo log-fe:compositeview --help` it will return:
 
 ```
 Usage:
-  yo log-js:compositeview [options] <name>
+  yo log-fe:compositeview [options] <name>
 
 Options:
   -h,   --help        # Print the generator's options and usage
