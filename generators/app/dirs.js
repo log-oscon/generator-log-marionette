@@ -16,6 +16,7 @@ module.exports = [
     'src/scripts/app/apis',
     'src/scripts/app/views',
     'src/scripts/app/templates',
+    'src/scripts/app/regions',
     'src/tests/specs',
     'src/tests/specs/collections',
     'src/tests/specs/models',
