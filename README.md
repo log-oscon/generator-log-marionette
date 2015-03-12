@@ -62,7 +62,7 @@ log-fe
     template
 ```
 
-Bear in mind, composite-template **IS NOT** supposed to be used. It is only used internally by `compositeview`.
+Bear in mind, `composite-template` **IS NOT** supposed to be used. It is only used internally by `compositeview`.
 
 You can see each sub-generator and its options by typing: `yo log-fe:[generator] --help`. E.g.: by typing `yo log-fe:compositeview --help` it will return:
 
