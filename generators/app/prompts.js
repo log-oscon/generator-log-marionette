@@ -26,16 +26,4 @@ module.exports = [{
         value: 'dust'
     }],
     default: 'handlebars'
-}, {
-    type:    'list',
-    name:    'grid',
-    message: 'Which grid system?',
-    choices: [{
-        name:  'Bootstrap',
-        value: 'bootstrap'
-    }, {
-        name:  'Susy',
-        value: 'susy'
-    }],
-    default: 'bootstrap'
 }];
