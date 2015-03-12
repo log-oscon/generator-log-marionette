@@ -18,11 +18,11 @@
       * `main.js` - application bootstrap
       * app/:
 
-          * app.js - basic definition of `Backbone.Marionette.Application`;
-          * radio.js - basic definition of `Radio` with a predefined `global` channel;
+          * `app.js` - basic definition of `Backbone.Marionette.Application`;
+          * `radio.js` - basic definition of `Radio` with a predefined `global` channel;
           * behaviors/ :
 
-              * behaviors.js - placeholder for other `Behavior`
+              * `behaviors.js` - placeholder for other `Behavior`
 
           * collections/ ; 
           * models/ ;
@@ -31,11 +31,11 @@
           * apis/ ;
           * views/ :
 
-              * root-view.js - view used by `app.js` as a view placeholder
+              * `root-view.js` - view used by `app.js` as a view placeholder
 
           * templates/ :
 
-               * root.(hbs|dust) - `root-view` template
+               * `root.(hbs|dust)` - `root-view.js` template
 
           * regions/',
 
