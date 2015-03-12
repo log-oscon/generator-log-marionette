@@ -36,5 +36,6 @@ module.exports = [{
     }, {
         name:  'Susy',
         value: 'susy'
-    }]
+    }],
+    default: 'bootstrap'
 }];
