@@ -53,11 +53,11 @@ var LogGenerator = yeoman.generators.Base.extend({
                 {}
             );
         }.bind(this));
-    }
+    },
 
-    // end: function() {
-    //     this.installDependencies();
-    // }
+    end: function () {
+        this.installDependencies();
+    }
 });
 
 module.exports = LogGenerator;
