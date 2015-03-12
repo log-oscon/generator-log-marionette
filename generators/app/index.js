@@ -30,8 +30,12 @@ var LogGenerator = yeoman.generators.Base.extend({
             );
         },
 
-        code: function () {
+        src: function () {
             this._copyFiles(this.srcFiles.files(this));
+        },
+
+        tasks: function () {
+            this.directory('gulp', 'gulp');
         },
 
         projectFiles: function () {
