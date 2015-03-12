@@ -2,7 +2,7 @@
 
 ## Installation
 
-`npm install -g generator-log-js`
+`npm install -g generator-log-js` - this is not reachable...yet :)
 
 ## Bootstrap
 
