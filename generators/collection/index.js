@@ -10,27 +10,19 @@ var CollectionGenerator = generators.NamedBase.extend(_.extend({}, BaseGenerator
     specFile: 'collection.spec.js',
     specPath: 'src/tests/specs/collections/',
 
-    initialize: function () {
-        this.option('all');
+    _initialize: function () {
+        this.option('all', { desc: 'should also create its corresponding models' });
     },
 
-    onBeforeSrc: function (values) {
+    _onBeforeSrc: function (values) {
         values.model = _.singularize(values.name);
         values.path  = _.singularize(this.name);
         return values;
     },
 
-    onSrc: function () {
-        this._all();
-    },
-
-    onTest: function () {
-        this._all();
-    },
-
-    _all: function () {
+    _onSrc: function () {
         if (this.options.all) {
-            this.composeWith('log:model', { args: [_.singularize(this.name)] });
+            this.composeWith('log-js:model', { args: [_.singularize(this.name)] });
         }
     }
 }));

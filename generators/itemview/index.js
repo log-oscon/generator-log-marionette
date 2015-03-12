@@ -9,15 +9,21 @@ var ItemViewGenerator = generators.NamedBase.extend(_.extend({}, BaseGenerator, 
     srcPath:  'src/scripts/app/views/',
     specFile: 'itemview.spec.js',
     specPath: 'src/tests/specs/views/',
-    suffix:   'view',
+    suffix:   '-view',
 
-    initialize: function () {
-        this.option('all');
+    _initialize: function () {
+        this.option('all', { desc: 'should also create its corresponding template' });
     },
 
-    onBeforeSrc: function (values) {
+    _onBeforeSrc: function (values) {
         values.path = this.name;
         return values;
+    },
+
+    _onSrc: function () {
+        if (this.options.all) {
+            this.composeWith('log-js:template', { args: [this.name] });
+        }
     }
 }));
 
