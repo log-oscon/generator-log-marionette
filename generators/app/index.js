@@ -51,11 +51,7 @@ var LogGenerator = yeoman.generators.Base.extend({
 
     _copyFiles: function (files) {
         files.forEach(function (file) {
-            this.fs.copyTpl(
-                this.templatePath(file.src),
-                this.destinationPath(file.dst),
-                {}
-            );
+            this.copy(file.src, file.dst);
         }.bind(this));
     },
 
