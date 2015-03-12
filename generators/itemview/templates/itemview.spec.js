@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var <%= name %>View = require('app/views/<%= path %>');
+    var <%= name %>View = require('app/views/<%= path %>-view');
 
     describe('<%= name %>View', function() {
         var view;

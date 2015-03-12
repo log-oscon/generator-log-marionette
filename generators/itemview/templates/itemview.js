@@ -5,7 +5,8 @@
 
     var <%= name %>View = Backbone.Marionette.ItemView.extend({
         template: require('app/templates/<%= path %>'),
-        tagName:  'div id="<%= name.charAt(0).toLowerCase() + name.slice(1) %>-view"',
+        tagName:  'div id="<%= canonical %>-view"',
+
         events: {
             /* your event hooks */
         }
