@@ -8,37 +8,37 @@
 
 `yo log-fe` will generate a `package.json` with the specified dependencies , an `.editorconfig`, a `.gitignore`, a `.jshintrc` and will create the following directories and files: e criar as seguintes directorias e ficheiros:
 
-* tasks/;
-* src/:
-  * images/;
-  * fonts/;
-  * styles/;
-  * scripts/:
+* tasks/
+* src/
+  * images/
+  * fonts/
+  * styles/
+  * scripts/
       * `main.js` - application bootstrap
-      * app/:
+      * app/
           * `app.js` - basic definition of `Backbone.Marionette.Application`;
           * `radio.js` - basic definition of `Radio` with a predefined `global` channel;
-          * behaviors/:
+          * behaviors/
               * `behaviors.js` - placeholder for other `Behavior`;
-          * collections/; 
-          * models/;
-          * controllers/;
-          * routers/;
-          * apis/;
-          * views/:
+          * collections/ 
+          * models/
+          * controllers/
+          * routers/
+          * apis/
+          * views/
               * `root-view.js` - view used by `app.js` as a view placeholder
-          * templates/ :
+          * templates/
                * `root.(hbs|dust)` - `root-view.js` template
-          * regions/,
+          * regions/
 
-  * tests/:
-      * app/:
-          * collections/;
-          * models/;
-          * controllers/;
-          * routers/;
-          * apis/;
-          * views/.
+  * tests/
+      * app/
+          * collections/
+          * models/
+          * controllers/
+          * routers/
+          * apis/
+          * views/
 
 All `package.json` will be automatically installed
 
