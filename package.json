@@ -1,14 +1,14 @@
 {
-  "name": "generator-log-js",
-  "version": "0.1.0",
+  "name": "generator-log-fe",
+  "version": "0.2.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "log-oscon/generator-log-js",
+  "repository": "pcruz7/generator-log-fe",
   "author": {
-    "name": "log OSCON",
-    "email": "",
-    "url": "https://bitbucket.org/log-oscon/generator-log-js"
+    "name": "Pedro Sousa",
+    "email": "pedro.cruz@log.pt",
+    "url": "https://github.com/pcruz7/generator-log-fe"
   },
   "engines": {
     "node": ">=0.10.0"
