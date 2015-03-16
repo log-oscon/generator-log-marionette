@@ -1,14 +1,14 @@
 {
-  "name": "generator-log-fe",
+  "name": "generator-log-marionette",
   "version": "0.2.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "pcruz7/generator-log-fe",
+  "repository": "log-oscon/generator-log-marionette",
   "author": {
     "name": "Pedro Sousa",
     "email": "pedro.cruz@log.pt",
-    "url": "https://github.com/pcruz7/generator-log-fe"
+    "url": "https://github.com/log-oscon/generator-log-marionette"
   },
   "engines": {
     "node": ">=0.10.0"

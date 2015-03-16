@@ -1,12 +1,19 @@
 > [Yeoman](http://yeoman.io) generator
 
+## What it is
+
+It will generate a base Marionette project with Browserify, specs and Gulp file. 
+Also, it will generate all the base components of a Marionette project - such as ItemView's, Models, etc.
+
 ## Installation
 
-`npm install -g generator-log-fe` - not npm available...yet :)
+Please read [Yeoman docs](http://yeoman.io) for Yeoman installation.
+
+`npm install -g generator-log-marionette` - not npm available...yet :)
 
 ## Bootstrap
 
-`yo log-fe` will generate a `package.json` with the specified dependencies , an `.editorconfig`, a `.gitignore`, a `.jshintrc` and will create the following directories and files: e criar as seguintes directorias e ficheiros:
+`yo log-marionette` will generate a `package.json` with the specified dependencies , an `.editorconfig`, a `.gitignore`, a `.jshintrc` and will create the following directories and files: e criar as seguintes directorias e ficheiros:
 
 * tasks/
 * src/
@@ -47,7 +54,7 @@ All `package.json` will be automatically installed
 You can see a list of possible generators by typing: `yo --help`. In this case you will receive the following list - alongside other generators:
 
 ```
-log-fe
+log-marionette
     behavior
     collection
     collectionview
@@ -64,11 +71,11 @@ log-fe
 
 Bear in mind, `composite-template` **IS NOT** supposed to be used. It is only used internally by `compositeview`.
 
-You can see each sub-generator and its options by typing: `yo log-fe:[generator] --help`. E.g.: by typing `yo log-fe:compositeview --help` it will return:
+You can see each sub-generator and its options by typing: `yo log-marionette:[generator] --help`. E.g.: by typing `yo log-marionette:compositeview --help` it will return:
 
 ```
 Usage:
-  yo log-fe:compositeview [options] <name>
+  yo log-marionette:compositeview [options] <name>
 
 Options:
   -h,   --help        # Print the generator's options and usage
