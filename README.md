@@ -86,6 +86,44 @@ Arguments:
   name    Type: String  Required: true
 ```
 
+A few points on naming conventions; when generating a model or a collection, the input name will be the file name, e.g.: `yo log-marionette:model my-name` will generate a `my-name.js` file with the following code:
+
+```
+(function () {
+    'use strict';
+
+    var Backbone = require('backbone');
+
+    var MyName = Backbone.Model.extend({});
+
+    module.exports = MyName;
+})();
+
+```
+
+In all other cases a suffix will be added to the name file and the generated object, e.g.: `yo log-marionette:behavior my-name` will generate a `my-name-behavior.js` file with the following contents:
+
+```
+(function () {
+    'use strict';
+
+    var Marionette = require('backbone.marionette');
+
+    var MyNameBehavior = Marionette.Behavior.extend({
+        defaults: {
+            /* your defaults */
+        },
+
+        events: {
+            /* your events */
+        }
+    });
+
+    module.exports = MyNameBehavior;
+})();
+
+```
+
 ## License
 
 MIT
