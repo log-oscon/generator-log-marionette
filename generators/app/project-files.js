@@ -9,4 +9,7 @@ module.exports = [{
 }, {
     src: 'gitignore',
     dst: '.gitignore'
+}, {
+    src: 'gulpfile.js',
+    dst: 'gulpfile.js'
 }];

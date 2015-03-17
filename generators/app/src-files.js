@@ -2,7 +2,7 @@
 
 module.exports = {
     files: function (generator) {
-        var ext = generator.config.get('engine') === 'dust' ? '.dust' : 'hbs';
+        var ext = generator.config.get('engine') === 'dust' ? 'dust' : 'hbs';
         return [
             {
                 src: 'marionette/main.js',

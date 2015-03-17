@@ -9,6 +9,11 @@ var LogGenerator = yeoman.generators.Base.extend({
     srcFiles:     require('./src-files'),
     projectFiles: require('./project-files'),
 
+    constructor: function () {
+        yeoman.generators.Base.apply(this, arguments);
+        this.option('skip-install');
+    },
+
     prompting: function () {
         var done = this.async();
 
@@ -56,7 +61,9 @@ var LogGenerator = yeoman.generators.Base.extend({
     },
 
     end: function () {
-        this.installDependencies();
+        if (!this.options['skip-install']) {
+            this.installDependencies();
+        }
     }
 });
 
