@@ -2,7 +2,7 @@
 
 ## What it is
 
-It will generate a base Marionette project with Browserify, specs and Gulp file. 
+It will generate a base Marionette project with Browserify, specs and Gulp tasks. 
 Also, it will generate all the base components of a Marionette project - such as ItemView's, Models, etc.
 
 ## Installation
