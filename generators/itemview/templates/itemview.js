@@ -5,12 +5,12 @@
 
     var <%= name %>View = Backbone.Marionette.ItemView.extend({
         template: require('app/templates/<%= path %>'),
-        tagName:  'div id="<%= canonical %>-view"',
+        tagName:  'div data-id="<%= canonical %>-view"',
 
         events: {
             /* your event hooks */
         }
     });
 
-    return <%= name %>View;
+    module.exports = <%= name %>View;
 })();
