@@ -30,7 +30,6 @@
         }
     },
     "devDependencies": {
-        "jasmine-core": "~2.2.0",
         "aliasify": "^1.5.1",
         "browser-sync": "~2.0.1",
         "browserify": "~8.0.3",
@@ -60,6 +59,9 @@
         "require-dir": "^0.1.0",
         "uglifyify": "^2.6.0",
         "vinyl-source-stream": "~0.1.1",
-        "watchify": "~2.2.1"
+        "watchify": "~2.2.1",
+        "mocha": "*",
+        "chai": "*",
+        "sinon": "^1.14.1"
     }
 }
