@@ -24,8 +24,8 @@ var CollectionViewGenerator = generators.NamedBase.extend(_.extend({}, BaseGener
 
     _onSrc: function () {
         if (this.options.all) {
-            this.composeWith('log-js:composite-template', { args: [this.name] });
-            this.composeWith('log-js:itemview', { args: [_.singularize(this.name)], options: { all: this.options.all } });
+            this.composeWith('log-marionette:composite-template', { args: [this.name] });
+            this.composeWith('log-marionette:itemview', { args: [_.singularize(this.name)], options: { all: this.options.all } });
         }
     }
 }));
