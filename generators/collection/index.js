@@ -22,7 +22,7 @@ var CollectionGenerator = generators.NamedBase.extend(_.extend({}, BaseGenerator
 
     _onSrc: function () {
         if (this.options.all) {
-            this.composeWith('log-js:model', { args: [_.singularize(this.name)] });
+            this.composeWith('log-marionette:model', { args: [_.singularize(this.name)] });
         }
     }
 }));
