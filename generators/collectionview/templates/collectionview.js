@@ -5,6 +5,7 @@
         <%= child %>View = require('app/views/<%= path %>');
 
     var <%= name %>View = Backbone.Marionette.CollectionView.extend({
+        tagName:   'div data-id="<%= canonical %>-view"',
         childView: <%= child %>View
     });
 
