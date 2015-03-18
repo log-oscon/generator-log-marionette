@@ -26,7 +26,7 @@ describe('log-marionette:layoutview', function () {
         assert.fileContent('src/scripts/app/views/log-view.js', /tagName:  'div data-id="log-view"'/);
         assert.fileContent('src/scripts/app/views/log-view.js', /module.exports = LogView;/);
 
-        assert.fileContent('src/tests/specs/views/log-view.spec.js', /var LogView = require\('app\/views\/log-view'\);/);
+        assert.fileContent('src/tests/specs/views/log-view.spec.js', /var LogView = require.main.require\('src\/scripts\/app\/views\/log-view'\);/);
         assert.fileContent('src/tests/specs/views/log-view.spec.js', /describe\('LogView'/);
         assert.fileContent('src/tests/specs/views/log-view.spec.js', /view = new LogView\(\)/);
     });

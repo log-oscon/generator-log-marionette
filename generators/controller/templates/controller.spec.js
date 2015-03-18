@@ -1,13 +1,11 @@
-(function () {
-    'use strict';
+'use strict';
 
-    var <%= name %>Controller = require('app/controllers/<%= path %>-controller');
+var <%= name %>Controller = require.main.require('src/scripts/app/controllers/<%= path %>-controller');
 
-    describe('<%= name %>Controller', function () {
-        var controller;
+describe('<%= name %>Controller', function () {
+    var controller;
 
-        it('should do something', function () {
-            controller = new <%= name %>Controller();
-        });
+    it('should do something', function () {
+        controller = new <%= name %>Controller();
     });
-})();
+});

@@ -22,7 +22,7 @@ describe('log-marionette:model', function () {
         assert.fileContent('src/scripts/app/models/log.js', /var Log = Backbone.Model.extend\(\{\}\);/);
         assert.fileContent('src/scripts/app/models/log.js', /module.exports = Log;/);
 
-        assert.fileContent('src/tests/specs/models/log.spec.js', /var Log = require\('app\/models\/log'\);/);
+        assert.fileContent('src/tests/specs/models/log.spec.js', /var Log = require.main.require\('src\/scripts\/app\/models\/log'\);/);
         assert.fileContent('src/tests/specs/models/log.spec.js', /describe\('Log'/);
         assert.fileContent('src/tests/specs/models/log.spec.js', /model = new Log\(\)/);
     });

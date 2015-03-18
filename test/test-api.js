@@ -22,7 +22,7 @@ describe('log-marionette:api', function () {
         assert.fileContent('src/scripts/app/apis/log-api.js', /var LogApi = Backbone.Marionette.Controller.extend/);
         assert.fileContent('src/scripts/app/apis/log-api.js', /module.exports = LogApi;/);
 
-        assert.fileContent('src/tests/specs/apis/log-api.spec.js', /var LogApi = require\('app\/apis\/log-api'\);/);
+        assert.fileContent('src/tests/specs/apis/log-api.spec.js', /var LogApi = require.main.require\('src\/scripts\/app\/apis\/log-api'\);/);
         assert.fileContent('src/tests/specs/apis/log-api.spec.js', /describe\('LogApi'/);
         assert.fileContent('src/tests/specs/apis/log-api.spec.js', /api = new LogApi\(\)/);
     });

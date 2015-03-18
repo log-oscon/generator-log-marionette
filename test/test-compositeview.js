@@ -29,7 +29,7 @@ describe('log-marionette:compositeview', function () {
         assert.fileContent('src/scripts/app/views/logs-view.js', /childContainer: '#logs-container'/);
         assert.fileContent('src/scripts/app/views/logs-view.js', /module.exports = LogsView;/);
 
-        assert.fileContent('src/tests/specs/views/logs-view.spec.js', /var LogsView = require\('app\/views\/logs-view'\);/);
+        assert.fileContent('src/tests/specs/views/logs-view.spec.js', /var LogsView = require.main.require\('src\/scripts\/app\/views\/logs-view'\);/);
         assert.fileContent('src/tests/specs/views/logs-view.spec.js', /describe\('LogsView'/);
         assert.fileContent('src/tests/specs/views/logs-view.spec.js', /view = new LogsView\(\)/);
     });
