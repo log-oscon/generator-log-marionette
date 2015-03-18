@@ -19,6 +19,8 @@ var ControllerGenerator = generators.NamedBase.extend(_.extend({}, BaseGenerator
         if (this.options.extend) {
             values.extend = this._.classify(this._.strRightBack(this.options.extend, '/'));
             values.extend_path = this.options.extend;
+        } else {
+            values.extend = false;
         }
 
         return values;
