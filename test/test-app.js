@@ -1,6 +1,6 @@
 'use strict';
 
-var utils   = require('./utils'),
+var utils   = require('../utils'),
     assert  = require('yeoman-generator').assert;
 
 describe('log-marionette:app', function () {
@@ -13,7 +13,7 @@ describe('log-marionette:app', function () {
             }, done);
         });
 
-        it('creates project files', function () {
+        it('should create project files', function () {
             assert.file([
                 'package.json',
                 '.editorconfig',
@@ -22,7 +22,13 @@ describe('log-marionette:app', function () {
             ]);
         });
 
-        it('creates src files', function () {
+        it('should have package.json set', function () {
+            assert.fileContent('package.json', /"name": "Project"/);
+            assert.fileContent('package.json', /"description": "Description"/);
+            assert.fileContent('package.json', /"handlebars": "\~3.0.0"/);
+        });
+
+        it('should create src files', function () {
             assert.file([
                 'src/scripts/main.js',
                 'src/scripts/app/app.js',
@@ -33,7 +39,7 @@ describe('log-marionette:app', function () {
             ]);
         });
 
-        it('creates gulp talks', function () {
+        it('should create gulp tasks', function () {
             assert.file([
                 'gulpfile.js',
                 'gulp/config.js',
@@ -57,7 +63,7 @@ describe('log-marionette:app', function () {
         });
     });
 
-    describe('when selecting dust', function() {
+    describe('when selecting dust', function () {
         before(function (done) {
             utils.runGenerator('../generators/app', {
                 name:        'Project',
@@ -66,7 +72,7 @@ describe('log-marionette:app', function () {
             }, done);
         });
 
-        it('creates project files', function () {
+        it('should create project files', function () {
             assert.file([
                 'package.json',
                 '.editorconfig',
@@ -75,7 +81,14 @@ describe('log-marionette:app', function () {
             ]);
         });
 
-        it('creates src files', function () {
+        it('should have package.json set', function () {
+            assert.fileContent('package.json', /"name": "Project"/);
+            assert.fileContent('package.json', /"description": "Description"/);
+            assert.fileContent('package.json', /"dustjs-linkedin": "\^2.4.0"/);
+            assert.fileContent('package.json', /"dustjs-linkedin-helpers": "\^1.2.0"/);
+        });
+
+        it('should create src files', function () {
             assert.file([
                 'src/scripts/main.js',
                 'src/scripts/app/app.js',
@@ -86,7 +99,7 @@ describe('log-marionette:app', function () {
             ]);
         });
 
-        it('creates gulp talks', function () {
+        it('should create gulp tasks', function () {
             assert.file([
                 'gulpfile.js',
                 'gulp/config.js',
