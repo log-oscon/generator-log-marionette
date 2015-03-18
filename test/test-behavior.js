@@ -11,13 +11,13 @@ describe('log-marionette:behavior', function () {
         });
     });
 
-    it('should create src and spec', function () {
+    it('should create src file', function () {
         assert.file([
             'src/scripts/app/behaviors/log-behavior.js'
         ]);
     });
 
-    it('should set the src and spec contents', function () {
+    it('should set the src contents', function () {
         assert.fileContent('src/scripts/app/behaviors/log-behavior.js', /var LogBehavior = Marionette.Behavior.extend/);
         assert.fileContent('src/scripts/app/behaviors/log-behavior.js', /module.exports = LogBehavior;/);
     });

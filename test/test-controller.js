@@ -46,7 +46,7 @@ describe('log-marionette:controller', function () {
             });
         });
 
-        it('should set the src and spec contents', function () {
+        it('should set the src contents', function () {
             assert.fileContent('src/scripts/app/controllers/log-controller.js', /var AnotherController = require\('app\/controllers\/another-controller'\);/);
             assert.fileContent('src/scripts/app/controllers/log-controller.js', /var LogController = AnotherController.extend/);
             assert.fileContent('src/scripts/app/controllers/log-controller.js', /module.exports = LogController;/);
