@@ -31,9 +31,6 @@ module.exports = {
                 ext = this.ext;
             }
 
-            console.log(this.templatePath(this.srcFile));
-            console.log(this.destinationPath(this.srcPath + this.name + suffix + ext));
-            console.log('');
             this.fs.copyTpl(
                 this.templatePath(this.srcFile),
                 this.destinationPath(this.srcPath + this.name + suffix + ext),
