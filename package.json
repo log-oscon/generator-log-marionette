@@ -29,7 +29,8 @@
     "underscore.inflections": "~0.2.1"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "sinon": "^1.14.1"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
