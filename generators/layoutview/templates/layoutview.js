@@ -5,7 +5,7 @@
 
     var <%= name %>View = Backbone.Marionette.LayoutView.extend({
         template: require('app/templates/<%= path %>'),
-        tagName:  'div id="<%= canonical %>-view"',
+        tagName:  'div data-id="<%= canonical %>-view"',
 
         regions: {
             /* your regions */
@@ -16,5 +16,5 @@
         }
     });
 
-    return <%= name %>View;
+    module.exports = <%= name %>View;
 })();

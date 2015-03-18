@@ -22,7 +22,7 @@ var ItemViewGenerator = generators.NamedBase.extend(_.extend({}, BaseGenerator, 
 
     _onSrc: function () {
         if (this.options.all) {
-            this.composeWith('log-js:template', { args: [this.name] });
+            this.composeWith('log-marionette:template', { args: [this.name] });
         }
     }
 }));
