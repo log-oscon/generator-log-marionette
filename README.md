@@ -9,7 +9,7 @@ Also, it will generate all the base components of a Marionette project - such as
 
 Please read [Yeoman docs](http://yeoman.io) for Yeoman installation.
 
-`npm install -g generator-log-marionette` - not npm available...yet :)
+`npm install -g generator-log-marionette`
 
 ## Bootstrap
 

@@ -6,8 +6,8 @@
   "main": "app/index.js",
   "repository": "log-oscon/generator-log-marionette",
   "author": {
-    "name": "Pedro Sousa",
-    "email": "pedro.cruz@log.pt",
+    "name": "log OSCON",
+    "email": "engenharia@log.pt",
     "url": "https://github.com/log-oscon/generator-log-marionette"
   },
   "engines": {
