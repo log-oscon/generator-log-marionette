@@ -22,7 +22,7 @@
         source       = require('vinyl-source-stream'),
         watchify     = require('watchify');
 
-    gulp.task('browserify', function (callback) {
+    gulp.task('browserify', ['message-format'], function (callback) {
 
         var bundleQueue = config.browserify.bundleConfigs.length;
 

@@ -3,6 +3,7 @@
 module.exports = [
     'config',
     'src',
+    'src/i18n',
     'src/images',
     'src/fonts',
     'src/styles',

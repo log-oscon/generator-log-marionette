@@ -58,7 +58,8 @@ describe('log-marionette:app', function () {
                 'gulp/tasks/set-watch.js',
                 'gulp/tasks/test.js',
                 'gulp/tasks/unretina.js',
-                'gulp/tasks/watch.js'
+                'gulp/tasks/watch.js',
+                'gulp/tasks/message-format.js'
             ]);
         });
     });
@@ -85,7 +86,7 @@ describe('log-marionette:app', function () {
             assert.fileContent('package.json', /"name": "Project"/);
             assert.fileContent('package.json', /"description": "Description"/);
             assert.fileContent('package.json', /"dustjs-linkedin": "\^2.4.0"/);
-            assert.fileContent('package.json', /"dustjs-linkedin-helpers": "\^1.2.0"/);
+            assert.fileContent('package.json', /"dustjs-helpers": "\^1.2.0"/);
         });
 
         it('should create src files', function () {
@@ -117,7 +118,8 @@ describe('log-marionette:app', function () {
                 'gulp/tasks/set-watch.js',
                 'gulp/tasks/test.js',
                 'gulp/tasks/unretina.js',
-                'gulp/tasks/watch.js'
+                'gulp/tasks/watch.js',
+                'gulp/tasks/message-format.js'
             ]);
         });
     });
