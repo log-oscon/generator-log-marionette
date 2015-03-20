@@ -16,6 +16,7 @@
             global.Backbone.Marionette = global.Marionette;
 
             mochify('./src/tests/specs/**/*.spec.js', {
+                watch:     true,
                 extension: ['.hbs'],
                 reporter:  'spec'
             }).bundle().on('end', done);
