@@ -12,4 +12,7 @@ module.exports = [{
 }, {
     src: 'gulpfile.js',
     dst: 'gulpfile.js'
+}, {
+    src: 'shim.js',
+    dst: 'config/shim.js'
 }];

@@ -18,7 +18,8 @@ describe('log-marionette:app', function () {
                 'package.json',
                 '.editorconfig',
                 '.jshintrc',
-                '.gitignore'
+                '.gitignore',
+                'config/shim.js'
             ]);
         });
 

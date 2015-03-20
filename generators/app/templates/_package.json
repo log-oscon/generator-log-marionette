@@ -14,8 +14,13 @@
         "handlebars": "~3.0.0", <% } %>
         "moment": "~2.8.1"
     },
-    "browser": {},
-    "browserify-shim": {},
+    "browser": {
+        "jquery":              "./node_modules/jquery/dist/jquery.js",
+        "lodash":              "./node_modules/lodash/index.js",
+        "backbone":            "./node_modules/backbone/backbone.js",
+        "backbone.marionette": "./node_modules/backbone.marionette/lib/backbone.marionette.js"
+    },
+    "browserify-shim": "./config/shim.js",
     "browserify": {
         "transform": [
             "browserify-data",

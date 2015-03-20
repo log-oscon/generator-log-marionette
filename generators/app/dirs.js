@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = [
+    'config',
     'src',
     'src/images',
     'src/fonts',
