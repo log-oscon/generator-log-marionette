@@ -2,7 +2,7 @@
     'use strict';
 
     var Marionette = require('backbone.marionette'),
-        <%= child %>View = require('app/views/<%= child_path %>');
+        <%= child %>View = require('app/views/<%= child_path %>-view');
 
     var <%= name %>View = Marionette.CompositeView.extend({
         template:       require('app/templates/<%= path %>'),

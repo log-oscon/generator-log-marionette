@@ -21,7 +21,7 @@ describe('log-marionette:compositeview', function () {
     });
 
     it('should set the src and spec contents', function () {
-        assert.fileContent('src/scripts/app/views/logs-view.js', /LogView = require\('app\/views\/log'\)/);
+        assert.fileContent('src/scripts/app/views/logs-view.js', /LogView = require\('app\/views\/log-view'\)/);
         assert.fileContent('src/scripts/app/views/logs-view.js', /var LogsView = Marionette/);
         assert.fileContent('src/scripts/app/views/logs-view.js', /template:       require\('app\/templates\/logs'\)/);
         assert.fileContent('src/scripts/app/views/logs-view.js', /tagName:        'div data-id="logs-view"'/);

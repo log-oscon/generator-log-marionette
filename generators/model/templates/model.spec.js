@@ -1,6 +1,6 @@
 'use strict';
 
-var <%= name %> = require.main.require('src/scripts/app/models/<%= path %>');
+var <%= name %> = require('app/models/<%= path %>');
 
 describe('<%= name %>', function () {
     var model;

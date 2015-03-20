@@ -2,7 +2,7 @@
     'use strict';
 
     var Marionette = require('backbone.marionette'),
-        <%= child %>View = require('app/views/<%= path %>');
+        <%= child %>View = require('app/views/<%= path %>-view');
 
     var <%= name %>View = Marionette.CollectionView.extend({
         tagName:   'div data-id="<%= canonical %>-view"',

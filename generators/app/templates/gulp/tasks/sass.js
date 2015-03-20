@@ -4,7 +4,7 @@
     var gulp         = require('gulp'),
         config       = require('../config'),
         handleErrors = require('../util/handle-errors'),
-        gulpIf       = require('gulp-ifx'),
+        gulpIf       = require('gulp-if'),
         sourcemaps   = require('gulp-sourcemaps'),
         scssLint     = require('gulp-scss-lint'),
         sass         = require('gulp-sass'),
