@@ -1,10 +1,10 @@
 (function () {
     'use strict';
 
-    var Backbone = require('backbone'),
+    var Marionette = require('backbone.marionette'),
         <%= child %>View = require('app/views/<%= child_path %>');
 
-    var <%= name %>View = Backbone.Marionette.CompositeView.extend({
+    var <%= name %>View = Marionette.CompositeView.extend({
         template:       require('app/templates/<%= path %>'),
         tagName:        'div data-id="<%= canonical %>-view"',
         childView:      <%= child %>View,
