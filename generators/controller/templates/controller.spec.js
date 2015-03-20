@@ -1,6 +1,6 @@
 'use strict';
 
-var <%= name %>Controller = require.main.require('src/scripts/app/controllers/<%= path %>-controller');
+var <%= name %>Controller = require('app/controllers/<%= path %>-controller');
 
 describe('<%= name %>Controller', function () {
     var controller;

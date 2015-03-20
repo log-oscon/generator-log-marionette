@@ -21,11 +21,11 @@ describe('log-marionette:controller', function () {
     });
 
     it('should set the src and spec contents', function () {
-        assert.fileContent('src/scripts/app/controllers/log-controller.js', /var Backbone = require\('backbone'\);/);
-        assert.fileContent('src/scripts/app/controllers/log-controller.js', /var LogController = Backbone.Marionette.Controller.extend/);
+        assert.fileContent('src/scripts/app/controllers/log-controller.js', /var Marionette = require\('backbone.marionette'\);/);
+        assert.fileContent('src/scripts/app/controllers/log-controller.js', /var LogController = Marionette.Controller.extend/);
         assert.fileContent('src/scripts/app/controllers/log-controller.js', /module.exports = LogController;/);
 
-        assert.fileContent('src/tests/specs/controllers/log-controller.spec.js', /var LogController = require.main.require\('src\/scripts\/app\/controllers\/log-controller'\);/);
+        assert.fileContent('src/tests/specs/controllers/log-controller.spec.js', /var LogController = require\('app\/controllers\/log-controller'\);/);
         assert.fileContent('src/tests/specs/controllers/log-controller.spec.js', /describe\('LogController'/);
         assert.fileContent('src/tests/specs/controllers/log-controller.spec.js', /controller = new LogController\(\)/);
     });
