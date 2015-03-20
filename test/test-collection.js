@@ -26,7 +26,7 @@ describe('log-marionette:collection', function () {
         assert.fileContent('src/scripts/app/collections/logs.js', /model: Log/);
         assert.fileContent('src/scripts/app/collections/logs.js', /module.exports = Logs;/);
 
-        assert.fileContent('src/tests/specs/collections/logs.spec.js', /var Logs = require.main.require\('src\/scripts\/app\/collections\/logs'\);/);
+        assert.fileContent('src/tests/specs/collections/logs.spec.js', /var Logs = require\('app\/collections\/logs'\);/);
         assert.fileContent('src/tests/specs/collections/logs.spec.js', /describe\('Logs'/);
         assert.fileContent('src/tests/specs/collections/logs.spec.js', /collection = new Logs\(\)/);
     });

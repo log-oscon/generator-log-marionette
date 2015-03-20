@@ -1,6 +1,6 @@
 'use strict';
 
-var <%= name %> = require.main.require('src/scripts/app/collections/<%= path %>');
+var <%= name %> = require('app/collections/<%= path %>');
 
 describe('<%= name %>', function () {
     var collection;
