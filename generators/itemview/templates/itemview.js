@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    var Backbone = require('backbone');
+    var Marionette = require('backbone.marionette');
 
-    var <%= name %>View = Backbone.Marionette.ItemView.extend({
+    var <%= name %>View = Marionette.ItemView.extend({
         template: require('app/templates/<%= path %>'),
         tagName:  'div data-id="<%= canonical %>-view"',
 
