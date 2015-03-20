@@ -17,7 +17,7 @@
 
             mochify('./src/tests/specs/**/*.spec.js', {
                 watch:     true,
-                extension: ['.hbs'],
+                extension: ['.hbs', '.dust'],
                 reporter:  'spec'
             }).bundle().on('end', done);
         });
