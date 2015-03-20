@@ -1,9 +1,9 @@
 (function () {
     'use strict';
 
-    var Backbone = require('backbone');
+    var Marionette = require('backbone.marionette');
 
-    var <%= name %>Api = Backbone.Marionette.Controller.extend({
+    var <%= name %>Api = Marionette.Controller.extend({
         /* your code */
     });
 

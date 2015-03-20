@@ -1,6 +1,6 @@
 'use strict';
 
-var <%= name %>Api = require.main.require('src/scripts/app/apis/<%= path %>-api');
+var <%= name %>Api = require('app/apis/<%= path %>-api');
 
 describe('<%= name %>Api', function () {
     var api;
