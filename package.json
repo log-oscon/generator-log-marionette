@@ -14,7 +14,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha --recursive"
+    "test": "./node_modules/mocha/bin/mocha --recursive"
   },
   "keywords": [
     "yeoman-generator",
