@@ -1,9 +1,9 @@
 {
   "name": "generator-log-marionette",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Yeoman generator",
   "license": "MIT",
-  "main": "app/index.js",
+  "main": "generators/app/index.js",
   "repository": "log-oscon/generator-log-marionette",
   "author": {
     "name": "log OSCON",
@@ -14,13 +14,14 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
-  "files": [
-    "app"
-  ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "marionette",
+    "backbone",
+    "gulp",
+    "browserify"
   ],
   "dependencies": {
     "yeoman-generator": "~0.18.5",
