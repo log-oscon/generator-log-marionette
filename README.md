@@ -1,4 +1,6 @@
-> [Yeoman](http://yeoman.io) generator
+[![Build Status](https://travis-ci.org/log-oscon/generator-log-marionette.svg)](https://travis-ci.org/log-oscon/generator-log-marionette)
+
+> [Yeoman](http://yeoman.io) generator 
 
 ## What it is
 
