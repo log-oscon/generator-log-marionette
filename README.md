@@ -15,7 +15,7 @@ Please read [Yeoman docs](http://yeoman.io) for Yeoman installation.
 
 ## Bootstrap
 
-`yo log-marionette` will generate a `package.json` with the specified dependencies , an `.editorconfig`, a `.gitignore`, a `.jshintrc` and will create the following directories and files: e criar as seguintes directorias e ficheiros:
+`yo log-marionette` will generate a `package.json` with the specified dependencies , an `.editorconfig`, a `.gitignore`, a `.jshintrc` and will create the following directories and files:
 
 * tasks/
 * src/
