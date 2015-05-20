@@ -40,7 +40,7 @@
         "aliasify": "^1.5.1",
         "mochify": "^2.6.1", <% if (engine === 'handlebars') { %>
         "hbsfy": "^2.2.1", <% } %>
-        "jsdom": "^4.0.4",
+        "jsdom": "^3.1.2",
         "browser-sync": "~2.0.1",
         "browserify": "~8.0.3",
         "browserify-data": "^0.2.0",
