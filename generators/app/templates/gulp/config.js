@@ -46,20 +46,22 @@
             reporter: 'jshint-stylish'
         },
         browserSync: {
-            proxy: 'aprendermadeira.local',
+            server: {
+                baseDir: [dest, src]
+            },
             files: ['**/*.php', dest + '/**', '!' + dest + '/**.map']
         },
         browserify: {
             debug: debug,
             extensions: ['.cson', '.yaml', '.json', '.hbs', '.dust'],
             bundleConfigs: [{
-                entries: src + '/scripts/multisearch.js',
+                entries: src + '/scripts/main.js',
                 dest: dest + '/js',
-                outputName: 'multisearch.js',
+                outputName: 'main.js',
                 vendor: false
             }, {
                 dest: dest + '/js',
-                outputName: 'multisearch-ie.js',
+                outputName: 'infrastructure.js',
                 vendor: true
             }, {
                 entries: './test/jasmine/**/*.spec.js',
