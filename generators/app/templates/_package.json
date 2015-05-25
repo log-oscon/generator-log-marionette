@@ -23,11 +23,11 @@
     "browserify-shim": "./config/shim.js",
     "browserify": {
         "transform": [
+            "aliasify",
             "browserify-shim",
             "browserify-data",<% if (engine === 'dust') { %>
             "browserify-dustjs", <%} else {%>
-            "hbsfy", <% } %>
-            "aliasify"
+            "hbsfy" <% } %>
         ]
     },
     "aliasify": {
@@ -42,10 +42,10 @@
         "hbsfy": "^2.2.1", <% } %>
         "jsdom": "^3.1.2",
         "browser-sync": "~2.0.1",
-        "browserify": "~8.0.3",
+        "browserify": "^10.2.0",
         "browserify-data": "^0.2.0",
         "browserify-global-shim": "^1.0.0",
-        "browserify-shim": "~3.8.2", <% if (engine === 'dust') { %>
+        "browserify-shim": "~3.8.3", <% if (engine === 'dust') { %>
         "browserify-dustjs": "^0.0.5", <% } %>
         "del": "^1.1.1",
         "glob": "^4.3.2",
