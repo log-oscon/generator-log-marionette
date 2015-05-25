@@ -2,12 +2,12 @@
 
 module.exports = {
     'jquery': '$',
-    'lodash': '_',
+    'underscore': '_',
     'backbone': {
         'exports': 'Backbone',
         'depends': {
             'jquery': '$',
-            'lodash': '_'
+            'underscore': '_'
         }
     },
     'backbone.marionette': {

@@ -1,14 +1,19 @@
 (function () {
     'use strict';
 
+    var $        = require('jquery'),
+        Backbone = require('backbone');
+
+    Backbone.$          = $;
+    Backbone.Radio      = require('backbone.radio');
+    Backbone.Marionette = require('backbone.marionette');
+
     require('app/behaviors/behaviors');
 
-    var Backbone = require('backbone'),
-        moment   = require('moment'),
+    var moment   = require('moment'),
         Radio    = require('app/radio'),
         RootView = require('app/views/root-view'),
         App;
-
 
     App = new Backbone.Marionette.Application({});
 
